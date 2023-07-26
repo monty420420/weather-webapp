@@ -1,0 +1,31 @@
+
+.App{
+
+  .header{
+      display: flex;
+      justify-content: space-between;
+      &_select{
+        border: none;
+        cursor: pointer;
+        text-align-last: center;
+      }
+      &_search{
+        height: 34px;
+        width: 34px;
+        border: none;
+        cursor: pointer;
+        background-image: url(../img/magnifier.png);
+      }
+    }
+  
+  .contents{
+    &_info{
+
+    }
+    &_img{
+      
+    }
+  }
+}
+
+     

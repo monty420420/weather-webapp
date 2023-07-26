@@ -1,0 +1,17 @@
+.App .header {
+  display: flex;
+  justify-content: space-between;
+}
+.App .header_select {
+  border: none;
+  cursor: pointer;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.App .header_search {
+  height: 34px;
+  width: 34px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../img/magnifier.png);
+}/*# sourceMappingURL=App.css.map */
