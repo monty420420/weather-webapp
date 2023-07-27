@@ -13,13 +13,14 @@ function App() {
                 <option value="header_select_Beijing">베이징</option>
                 <option value="header_select_tokyo">도쿄</option>
               </select>
-              <button className='header_search'></button>
+              <button className='header_search'>🔍︎</button>
         </div>
         <div className='contents'>
           <div className='contents_info'>
-             <div className='contents_info_temperature'></div>
+             <div className='contents_info_temperature'>-8°</div>
              <div className='contents_info_text'>맑음</div>
           </div>
+          <div className='contents_compare'>어제보다 3° 낮아요</div>
           <div className='contents_img'></div>
         </div>
     </div>
