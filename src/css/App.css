@@ -12,7 +12,6 @@ body {
 
 .App {
   margin: 0;
-  width: 100%;
   font-family: "Scheherazade New";
   background-color: var(--color-navy);
 }
@@ -36,36 +35,4 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-}
-.App .contents_info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  padding: 10px;
-}
-.App .contents_info_temperature {
-  color: #3ba7ff;
-  padding: 10px;
-}
-.App .contents_info_text {
-  color: white;
-  padding: 10px;
-}
-.App .contents_compare {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 15px;
-  padding: 10px;
-}
-.App .contents .contents_img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-image: url(../img/sp-weather.png);
-  background-position: 15px 15px;
-  background-size: 100 100;
 }/*# sourceMappingURL=App.css.map */

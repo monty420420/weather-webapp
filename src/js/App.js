@@ -1,7 +1,8 @@
 import { useEffect, useState, Suspense } from 'react';
-import axios from 'axios';
-import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom'
+import {Routes, Route, Link, useNavigate} from 'react-router-dom'
 import '../css/App.css';
+import WeatherInfo from './WeatherInfo';
+
 
 function App() {
   return (
@@ -15,14 +16,7 @@ function App() {
               </select>
               <button className='header_search'>🔍︎</button>
         </div>
-        <div className='contents'>
-          <div className='contents_info'>
-             <div className='contents_info_temperature'>-8°</div>
-             <div className='contents_info_text'>맑음</div>
-          </div>
-          <div className='contents_compare'>어제보다 3° 낮아요</div>
-          <div className='contents_img'></div>
-        </div>
+        <WeatherInfo/>
     </div>
   );
 }

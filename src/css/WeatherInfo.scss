@@ -1,0 +1,46 @@
+.contents{
+    &_info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      padding: 10px;
+      &_temperature{
+        color: #3ba7ff;
+        font-weight: 800;
+        padding: 10px;
+      }
+      &_text{
+        color: white;
+        padding: 10px;
+      }
+    }
+    &_compare{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      padding: 10px;
+    }
+    &_degrees{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_max{
+          color: red;
+        }
+        &_min{
+          color: blue;
+        }
+    }
+    .contents_img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/sp-weather.png);
+    // background-position: 15px 15px;
+    background-size: 100 100;
+    }
+  }
