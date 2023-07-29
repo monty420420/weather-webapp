@@ -18,7 +18,7 @@ body {
 .App .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7%;
+  margin: 5px 10px 7%;
 }
 .App .header_select {
   border: none;
