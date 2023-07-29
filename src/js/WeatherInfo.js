@@ -21,7 +21,7 @@ function WeatherInfo(){
       const weatherText = document.querySelector('.contents_info_text');
 
       if (weather === 'Clear') { //맑음
-        weatherImage.style.backgroundPosition = '-2px -5px';
+        weatherImage.style.backgroundPosition = '5px 8px';
         weatherText.innerText = '맑음';
       } else if (weather === 'Clouds') { //흐림
         weatherImage.style.backgroundPosition = '-553px -298px';

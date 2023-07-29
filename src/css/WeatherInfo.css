@@ -34,10 +34,9 @@
   color: blue;
 }
 .contents .contents_img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-image: url(../img/sp-weather.png);
-  background-size: 100 100;
 }/*# sourceMappingURL=WeatherInfo.css.map */
