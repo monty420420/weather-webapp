@@ -24,46 +24,46 @@ function WeatherInfo(){
         weatherImage.style.backgroundPosition = '5px 8px';
         weatherText.innerText = '맑음';
       } else if (weather === 'Clouds') { //흐림
-        weatherImage.style.backgroundPosition = '-553px -298px';
+        weatherImage.style.backgroundPosition = '-415px -77px';
         weatherText.innerText = '흐림';
       } else if (weather === 'Rain') { //비
-        weatherImage.style.backgroundPosition = '-549px -493px';
+        weatherImage.style.backgroundPosition = '-415px -160px';
         weatherText.innerText = '비';
       } else if (weather === 'Snow') { //눈
-        weatherImage.style.backgroundPosition = '-175px -5px';
+        weatherImage.style.backgroundPosition = '-79px -85px';
         weatherText.innerText = '눈';
       } else if (weather === 'Thunderstorm') { //천둥번개
-        weatherImage.style.backgroundPosition = '-275px -5px';
+        weatherImage.style.backgroundPosition = '-248px 2px';
         weatherText.innerText = '천둥번개';
       } else if (weather === 'Drizzle') { //이슬비
-        weatherImage.style.backgroundPosition = '-549px -391px';
+        weatherImage.style.backgroundPosition = '-415px -156px';
         weatherText.innerText = '이슬비';
       } else if (weather === 'Mist') { //안개
-        weatherImage.style.backgroundPosition = '-189px -211px';
+        weatherImage.style.backgroundPosition = '-83px -161px';
         weatherText.innerText = '안개';
       } else if (weather === 'Smoke') { //연기
-        weatherImage.style.backgroundPosition = '-189px -211px';
+        weatherImage.style.backgroundPosition = '-83px -161px';
         weatherText.innerText = '연기';
       } else if (weather === 'Haze') { //안개
-        weatherImage.style.backgroundPosition = '-189px -211px';
+        weatherImage.style.backgroundPosition = '-83px -161px';
         weatherText.innerText = '안개';
       } else if (weather === 'Dust') { //먼지
-        weatherImage.style.backgroundPosition = '-4px -304px';
+        weatherImage.style.backgroundPosition = '5px -247px';
         weatherText.innerText = '먼지';
       } else if (weather === 'Fog') { //안개
-        weatherImage.style.backgroundPosition = '-189px -211px';
+        weatherImage.style.backgroundPosition = '-83px -161px';
         weatherText.innerText = '안개';
       } else if (weather === 'Sand') { //황사
-        weatherImage.style.backgroundPosition = '-4px -304px';
+        weatherImage.style.backgroundPosition = '5px -247px';
         weatherText.innerText = '황사';
       } else if (weather === 'Ash') { //화산재
-        weatherImage.style.backgroundPosition = '-4px -304px';
+        weatherImage.style.backgroundPosition = '5px -247px';
         weatherText.innerText = '화산재';
       } else if (weather === 'Squall') { //돌풍
-        weatherImage.style.backgroundPosition = '-87px -6px';
+        weatherImage.style.backgroundPosition = '5px -169px';
         weatherText.innerText = '돌풍';
       } else if (weather === 'Tornado') { //태풍
-        weatherImage.style.backgroundPosition = '-87px -6px';
+        weatherImage.style.backgroundPosition = '5px -169px';
         weatherText.innerText = '태풍';
       }
     })

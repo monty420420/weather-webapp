@@ -29,13 +29,15 @@
 }
 .contents_degrees_max {
   color: red;
+  padding: 5px;
 }
 .contents_degrees_min {
-  color: blue;
+  color: rgb(3, 112, 214);
+  padding: 5px;
 }
 .contents .contents_img {
-  width: 90px;
-  height: 90px;
+  width: 88px;
+  height: 88px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-image: url(../img/sp-weather.png);

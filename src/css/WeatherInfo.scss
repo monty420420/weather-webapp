@@ -29,16 +29,19 @@
         align-items: center;
         &_max{
           color: red;
+          padding: 5px;
         }
         &_min{
-          color: blue;
+          color: rgb(3, 112, 214);
+          padding: 5px;
         }
     }
     .contents_img {
-    width: 90px;
-    height: 90px;
+    width: 88px;
+    height: 88px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-image: url(../img/sp-weather.png);
+    // background-position: 5px 8px;
     }
   }
