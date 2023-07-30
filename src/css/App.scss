@@ -14,27 +14,6 @@ body {
   margin: 0;
   font-family: 'Scheherazade New';
   background-color: var(--color-navy);
-  .header{
-      display: flex;
-      justify-content: space-between;
-      margin: 5px 10px 7%;
-      &_select{
-        border: none;
-        cursor: pointer;
-        text-align-last: center;
-        background-color: var(--color-navy);
-        color: white;
-      }
-      &_search{
-        height: 34px;
-        width: 34px;
-        background-color: var(--color-navy);
-        color: white;
-        border: none;
-        cursor: pointer;
-        // background-image: url(../img/magnifier.png);
-      }
-    }
   
 
 }
