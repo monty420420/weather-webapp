@@ -1,9 +1,18 @@
 import axios from "axios";
 import '../css/WeatherInfo.css'
+import { useEffect, useState } from "react";
 
 
 function WeatherInfo(){
-    const city = 'seoul'; // 조회하려는 도시의 이름
+    // const city = 'seoul'; // 조회하려는 도시의 이름
+    const [city, setCity] = useState('seoul');
+    const [weatherData, setWeatherData] = useState(null);
+    
+    useEffect(()=> {
+      getWeatherData();
+    },[city]);
+
+    const getWeatherData = () => {
     const apiKey ="9c59ac8c758bb7af6ec4afbc771e28fd";
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(url)
@@ -13,8 +22,8 @@ function WeatherInfo(){
       }
   
       const data = response.data; // Axios의 응답 데이터는 response.data에 저장됩니다.
-  
-      currentWeather(data); // 날씨 정보를 처리하는 함수 호출
+      setWeatherData(data); // 날씨데이터 set에 저장
+      currentWeather(data); // 최고온도 최저온도 변경을 위해 아래의 함수 호출
   
       const weather = data.weather[0].main;
       const weatherImage = document.querySelector('.contents_img');
@@ -69,26 +78,44 @@ function WeatherInfo(){
     })
     .catch(error => {
       alert(error.message); // 오류 처리
+      setWeatherData(null);
     });
-  
+    
+  }
+
+  const handleCityChange = (event) => {
+    setCity(event.target.value);
+  };
+
     function currentWeather(data) {
         //현재 온도
         let temp = document.querySelector(".contents_info_temperature");
-        let formattedTemp = data.main.temp.toFixed(1);
+        let formattedTemp = data.main.temp.toFixed(1);  //소수점한자리까지
         temp.innerText = `${formattedTemp}°`;
       
         //최저온도
         let rowTemp = document.querySelector(".contents_degrees_min");
-        let formattedRowTemp = data.main.temp_min.toFixed(0);
+        let formattedRowTemp = data.main.temp_min.toFixed(0); //소수점없이
         rowTemp.innerText = `${formattedRowTemp}°`;
       
         //최고온도
         let highTemp = document.querySelector(".contents_degrees_max");
-        let formattedHighTemp = data.main.temp_max.toFixed(0);
+        let formattedHighTemp = data.main.temp_max.toFixed(0); //소수점없이
         highTemp.innerText = `${formattedHighTemp}°`;
       }
 
       return (
+        <>
+        <div className='header'>
+        <select className="header_select" value={city} onChange={handleCityChange}>
+          <option className="header_select_seoul" value="seoul">서울</option>
+          <option className="header_select_washington" value="washington">워싱턴</option>
+          <option className="header_select_beijing" value="beijing">베이징</option>
+          <option className="header_select_tokyo" value="tokyo">도쿄</option>
+          <option className="header_select_london" value="london">런던</option>
+        </select>
+        <button className='header_search'>🔍︎</button>
+       </div>
         <div className='contents'>
         <div className='contents_info'>
            <div className='contents_info_temperature'></div>
@@ -100,7 +127,9 @@ function WeatherInfo(){
           <div className="contents_degrees_min"></div>
         </div>
         <div className='contents_img'></div>
+        <div className="contents_time"></div>
       </div>
+      </>
       )
 }
 

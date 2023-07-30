@@ -1,3 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px 7%;
+}
+.header_select {
+  border: none;
+  cursor: pointer;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  background-color: var(--color-navy);
+  color: white;
+}
+.header_search {
+  height: 34px;
+  width: 34px;
+  background-color: var(--color-navy);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contents {
+  display: block;
+}
 .contents_info {
   display: flex;
   justify-content: center;

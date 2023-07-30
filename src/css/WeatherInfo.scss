@@ -1,4 +1,26 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px 7%;
+  &_select{
+    border: none;
+    cursor: pointer;
+    text-align-last: center;
+    background-color: var(--color-navy);
+    color: white;
+  }
+  &_search{
+    height: 34px;
+    width: 34px;
+    background-color: var(--color-navy);
+    color: white;
+    border: none;
+    cursor: pointer;
+    // background-image: url(../img/magnifier.png);
+  }
+}
 .contents{
+  display: block;
     &_info{
       display: flex;
       justify-content: center;
@@ -43,5 +65,8 @@
     background-repeat: no-repeat;
     background-image: url(../img/sp-weather.png);
     // background-position: 5px 8px;
+    }
+    &_time{
+      
     }
   }

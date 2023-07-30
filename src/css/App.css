@@ -14,25 +14,4 @@ body {
   margin: 0;
   font-family: "Scheherazade New";
   background-color: var(--color-navy);
-}
-.App .header {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 10px 7%;
-}
-.App .header_select {
-  border: none;
-  cursor: pointer;
-  -moz-text-align-last: center;
-       text-align-last: center;
-  background-color: var(--color-navy);
-  color: white;
-}
-.App .header_search {
-  height: 34px;
-  width: 34px;
-  background-color: var(--color-navy);
-  color: white;
-  border: none;
-  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
