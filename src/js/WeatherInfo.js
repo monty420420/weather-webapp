@@ -132,9 +132,9 @@ function WeatherInfo(){
            <div className='contents_info_text'></div>
         </div>
         <div className="contents_degrees">
-          <div className="contents_degrees_text">최고온도</div>
+          <div className="contents_degrees_text">최고온도:</div>
           <div className="contents_degrees_max"></div>
-          <div className="contents_degrees_text">최저온도</div>
+          <div className="contents_degrees_text">최저온도:</div>
           <div className="contents_degrees_min"></div>
         </div>
         <div className='contents_img'></div>
