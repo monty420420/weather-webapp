@@ -10,13 +10,18 @@
     color: white;
   }
   &_search{
-    height: 34px;
-    width: 34px;
-    background-color: var(--color-navy);
-    color: white;
-    border: none;
-    cursor: pointer;
-    // background-image: url(../img/magnifier.png);
+    &_textbox{
+     width: 120px;
+    }
+    &_img{
+      height: 34px;
+      width: 34px;
+      background-color: var(--color-navy);
+      color: white;
+      border: none;
+      cursor: pointer;
+      // background-image: url(../img/magnifier.png);
+    }
   }
 }
 .contents{
@@ -49,6 +54,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &_text{
+          
+        }
         &_max{
           color: red;
           padding: 5px;

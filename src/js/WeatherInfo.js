@@ -22,7 +22,7 @@ function WeatherInfo(){
       }
   
       const data = response.data; // Axios의 응답 데이터는 response.data에 저장됩니다.
-      setWeatherData(data); // 날씨데이터 set에 저장
+      setWeatherData(data); // 날씨데이터 set에 저장 
       currentWeather(data); // 최고온도 최저온도 변경을 위해 아래의 함수 호출
   
       const weather = data.weather[0].main;
@@ -81,11 +81,11 @@ function WeatherInfo(){
       setWeatherData(null);
     });
     
-  }
+    }
 
-  const handleCityChange = (event) => {
+    const handleCityChange = (event) => {
     setCity(event.target.value);
-  };
+    };
 
     function currentWeather(data) {
         //현재 온도
@@ -103,6 +103,9 @@ function WeatherInfo(){
         let formattedHighTemp = data.main.temp_max.toFixed(0); //소수점없이
         highTemp.innerText = `${formattedHighTemp}°`;
       }
+    
+
+
 
       return (
         <>
@@ -114,16 +117,24 @@ function WeatherInfo(){
           <option className="header_select_tokyo" value="tokyo">도쿄</option>
           <option className="header_select_london" value="london">런던</option>
         </select>
-        <button className='header_search'>🔍︎</button>
+        <div className='header_search'>
+          <input
+            className="header_search_textbox"
+            type="text"
+            placeholder="type your city"
+          />
+        <button className='header_search_img'>🔍︎</button>
+        </div>
        </div>
         <div className='contents'>
         <div className='contents_info'>
            <div className='contents_info_temperature'></div>
            <div className='contents_info_text'></div>
         </div>
-        <div className='contents_compare'>어제보다 3° 낮아요</div>
         <div className="contents_degrees">
+          <div className="contents_degrees_text">최고온도</div>
           <div className="contents_degrees_max"></div>
+          <div className="contents_degrees_text">최저온도</div>
           <div className="contents_degrees_min"></div>
         </div>
         <div className='contents_img'></div>

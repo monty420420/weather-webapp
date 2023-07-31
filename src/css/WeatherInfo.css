@@ -11,7 +11,10 @@
   background-color: var(--color-navy);
   color: white;
 }
-.header_search {
+.header_search_textbox {
+  width: 120px;
+}
+.header_search_img {
   height: 34px;
   width: 34px;
   background-color: var(--color-navy);
