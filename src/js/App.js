@@ -1,7 +1,7 @@
 import { useEffect, useState, Suspense } from 'react';
 import {Routes, Route, Link, useNavigate} from 'react-router-dom'
 import '../css/App.css';
-import WeatherInfo from './weatherInfo.js';
+import WeatherInfo from './js/weatherInfo.js';
 
 
 function App() {
